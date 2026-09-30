@@ -1,0 +1,5 @@
+{
+  "extends": [
+    "local>mestriga-org/renovate-presets"
+  ]
+}
