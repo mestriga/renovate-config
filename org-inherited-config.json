@@ -16,7 +16,6 @@ All values configurable in the Mend App UI are overriden here, except for:
 	"onboarding": true,
 	// sets the expected autodetected value as a fallback
 	"onboardingConfig": {
-		"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 		"extends": ["local>mestriga-org/renovate-config"]
 	},
 	// forces enablement of onboarding for discovered repositories with no dependencies
