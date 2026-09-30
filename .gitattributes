@@ -1,0 +1,6 @@
+* text=auto
+* whitespace=tabwidth=4,indent-with-non-tab
+
+*.json text whitespace=tabwidth=2,indent-with-non-tab
+
+*.yml  text whitespace=tabwidth=2,tab-in-indent
