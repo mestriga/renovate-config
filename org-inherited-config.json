@@ -16,7 +16,7 @@ All values configurable in the Mend App UI are overriden here, except for:
 	"onboarding": true,
 	// sets the expected autodetected value as a fallback
 	"onboardingConfig": {
-		"extends": ["local>mestriga-org/renovate-config"]
+		"extends": ["local>mestriga-org/renovate-presets"]
 	},
 	// forces enablement of onboarding for discovered repositories with no dependencies
 	"onboardingNoDeps": "enabled",
