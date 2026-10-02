@@ -1,11 +1,3 @@
-// https://docs.renovatebot.com/config-overview/#inherited-config
-/*
-Overrides values in the Mend App UI so that is needs no manual configuration.
-All values configurable in the Mend App UI are overriden here, except for:
-- Dependency Updates (when this is disabled, Renovate is not started for this repo)
-- Dependency Updates >> Renovate >> Automated PRs (when both this and 'Silent' are disabled, "dependencyDashboardApproval" is enabled with a catch-all packageRules)
-*/
-// onboarding* settings are global-only
 {
 	"$schema": "https://docs.renovatebot.com/renovate-inherited-schema.json",
 	// enforces the default fork processing mode for the Mend Renovate App
@@ -18,6 +10,8 @@ All values configurable in the Mend App UI are overriden here, except for:
 	"onboardingConfig": {
 		"extends": ["local>mestriga-org/renovate-presets"]
 	},
+	// set config file location
+	"onboardingConfigFileName": ".github/renovate.json",
 	// forces enablement of onboarding for discovered repositories with no dependencies
 	"onboardingNoDeps": "enabled",
 	// overrides configuration from the Mend App UI with the default
